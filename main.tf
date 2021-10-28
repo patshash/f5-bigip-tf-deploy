@@ -120,6 +120,9 @@ module bigip {
   DO_URL = "https://github.com/F5Networks/f5-declarative-onboarding/releases/download/v1.24.0/f5-declarative-onboarding-1.24.0-6.noarch.rpm" 
   TS_URL = "https://github.com/F5Networks/f5-telemetry-streaming/releases/download/v1.23.0/f5-telemetry-1.23.0-4.noarch.rpm"
 
+  #Search the correct AMI.
+  f5_ami_search_name = "F5 Networks BIGIP-14.* PAYG - Best 25Mbps*"
+
   prefix = format(
     "%s-bigip-1-nic_with_new_vpc-%s",
     local.prefix,
