@@ -146,7 +146,8 @@ module bigip {
 locals {
   prefix            = "tf-aws-bigip-pcarey"
   region            = "ap-southeast-2"
-  azs               = ["ap-southeast-2a", "ap-southeast-2b"]
+  #  azs               = ["ap-southeast-2a", "ap-southeast-2b"]
+  azs               = ["ap-southeast-2a"]
   cidr              = "10.0.0.0/16"
   allowed_mgmt_cidr = "0.0.0.0/0"
   allowed_app_cidr  = "0.0.0.0/0"
