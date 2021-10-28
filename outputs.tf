@@ -10,6 +10,7 @@ output "bigip_mgmt_ips" {
 
 # BIG-IP Management Public DNS Address
 output "bigip_mgmt_dns" {
+  type = string
   value = module.bigip.mgmt_public_dns
 }
 
@@ -21,6 +22,7 @@ output "bigip_mgmt_port" {
 output "password" {
   value     = random_password.password
   sensitive = true
+  type = string
 }
 
 # BIG-IP Password Secret name
